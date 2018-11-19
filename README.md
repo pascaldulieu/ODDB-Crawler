@@ -6,5 +6,5 @@ If you dont already have a token contact hex on the eye
 if you are running your own ODDB server you can set the api url using  `-e URL=<URL>` 
 
 ```
-docker run --name ODDB-crawler -e TOKEN=<TOKEN> pascaldulieu/oddb-crawler
+docker run --name ODDB-crawler -e TOKEN=<TOKEN> --restart always pascaldulieu/oddb-crawler
 ```
