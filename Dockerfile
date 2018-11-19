@@ -5,6 +5,6 @@ RUN apk add git && \
 	wget -P /go/ https://raw.githubusercontent.com/terorie/od-database-crawler/master/config.yml && \
 	go get github.com/terorie/od-database-crawler && \
 	sed -i "s|^  token: *$|  token: $TOKEN|g" /go/config.yml && \
-	sed -i "s|^  url: http://od-db.mine.terorie.com/api*$|  url: $URL|g" /go/config.yml && \
+	sed -i "s|^  url: http://od-db.mine.terorie.com/api*$|  url: $URL|g" /go/config.yml
 VOLUME [ "/go/bin/crawled" ]
 ENTRYPOINT ["/go/bin/od-database-crawler"]
