@@ -9,4 +9,4 @@ RUN apk add git && \
 	chmod +x /start.sh && \
 	cat /go/config.yml
 VOLUME [ "/go" ]
-ENTRYPOINT [ "/start.sh" ]`
+ENTRYPOINT [ "/start.sh" ]
