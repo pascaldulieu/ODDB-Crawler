@@ -1,4 +1,4 @@
-ODDB Crawler in a docker container
+[ODDB Crawler](https://github.com/terorie/od-database-crawler) in a docker container
 
 # How to run the container
 If you dont already have a token contact hex on the eye
